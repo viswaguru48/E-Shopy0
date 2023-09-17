@@ -15,33 +15,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
         integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>E-Shopy Site</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-md" data-bs-theme="light">
+        <nav class="navbar fixed-top navbar-expand-md" data-bs-theme="light">
             <div class="container">
                 <a href="" class="navbar-brand">E-Shopy</a>
                 <button class="d-md-none navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasRight">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end w-75" tabindex="-1" id="offcanvasRight">
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span
+                        class="navbar-toggler-icon"></span></button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasRightLabel">Menu</h5>
                         <button type="button" class="btn-close me-2" data-bs-dismiss="offcanvas"
                             aria-label="Close"></button>
                     </div>
                     <ul class="offcanvas-body flex-grow-1 justify-content-evenly mb-0">
-                        <li class="nav-item"><a class="nav-link py-md-0 py-3 active" href="./index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link py-md-0 py-3" href="./index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link py-md-0 py-3" href="./new.html">New</a></li>
-                        <li class="nav-item"><a class="nav-link py-md-0 py-3" href="./category.html">Categories</a></li>
+                        <li class="nav-item"><a class="nav-link py-md-0 py-3 active" href="./category.html">Categories</a></li>
                         <li class="nav-item"><a class="nav-link py-md-0 py-3" href="./about.html">About Us</a></li>
                         <li class="nav-item"><a class="nav-link py-md-0 py-3" href="./contact.html">Contact Us</a></li>
-                        <a class=" py-md-0 py-3 carticon d-flex justify-content-center" href="#">
+                        <a class=" py-md-0 py-3 carticon" href="#">
                             <i class="fa-solid fa-2x fa-cart-shopping"></i>
                         </a>
                     </ul>
@@ -49,179 +48,16 @@
             </div>
         </nav>
     </header>
-
     <main>
-        <section class="home" id="home">
-            <div class="container py-5 mb-4">
-                <div class="row">
-                    <div class="col-md-6 px-3 mb-5 d-flex flex-column justify-content-center gap-3">
-                        <h1 class="text-md-start text-sm-center text-center" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">E-Shopy</h1>
-                        <h3 class="text-md-start text-sm-center text-center "  data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">Your One-Stop Online Shopping Destination
-                        </h3>
-                        <p class="text-md-start text-sm-center text-center"  data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">E-Shopy, where shopping meets convenience,
-                            quality, and endless choices. We understand that online shopping has become an integral part
-                            of our lives, and we're here to enhance your experience. From fashion to electronics, home
-                            decor to fitness gear, and everything in between, we've got you covered.</p>
-                        <div class="homebtn d-flex justify-content-md-start justify-content-center">
-                            <div class="btn rounded-1"  data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">Explore</div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <img src="./images/herobg.svg" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="arrivals" id="arrivals">
-            <div class="container pt-5 border-top">
-                <h1>New Arrivals</h1>
-                <div class="row my-5">
-                    <h2>Shirts</h2>
-                    <div class="col-lg-3 col-md-6 mt-3" data-aos="fade-right" data-aos-delay="100"
-                        data-aos-duration="1000"  data-aos-once="true">
-                        <div class="card overflow-hidden">
-                            <img src="./images/shirt1.jpg" class="img-fluid card-img-top" alt="">
-                            <div class="card-body">
-                                <h2>Formal Shirt</h2>
-                                <div class="rating my-2">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </div>
-                                <p>Rs.500</p>
-                                <div class="buybtn">
-                                    <a href="" class="btn buynow">Buy Now</a>
-                                    <a href="" class="btn cartbtn">Add to Cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mt-3" data-aos="fade-up" data-aos-delay="200"
-                        data-aos-duration="1000"  data-aos-once="true">
-                        <div class="card overflow-hidden">
-                            <img src="./images/shirt2.jpg" class="img-fluid card-img-top" alt="">
-                            <div class="card-body">
-                                <h2>Formal Shirt</h2>
-                                <div class="rating my-2">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </div>
-                                <p>Rs.500</p>
-                                <div class="buybtn">
-                                    <a href="" class="btn buynow">Buy Now</a>
-                                    <a href="" class="btn cartbtn">Add to Cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mt-3" data-aos="fade-up" data-aos-delay="300"
-                        data-aos-duration="1000"  data-aos-once="true">
-                        <div class="card overflow-hidden">
-                            <img src="./images/shirt3.avif" class="img-fluid card-img-top" alt="">
-                            <div class="card-body">
-                                <h2>Formal Shirt</h2>
-                                <div class="rating my-2">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </div>
-                                <p>Rs.500</p>
-                                <div class="buybtn">
-                                    <a href="" class="btn buynow">Buy Now</a>
-                                    <a href="" class="btn cartbtn">Add to Cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mt-3" data-aos="fade-left" data-aos-delay="400"
-                        data-aos-duration="1000"  data-aos-once="true">
-                        <div class="card overflow-hidden">
-                            <img src="./images/shirt4.webp" class="img-fluid card-img-top" alt="">
-                            <div class="card-body">
-                                <h2>Formal Shirt</h2>
-                                <div class="rating my-2">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </div>
-                                <p>Rs.500</p>
-                                <div class="buybtn">
-                                    <a href="" class="btn buynow">Buy Now</a>
-                                    <a href="" class="btn cartbtn">Add to Cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="banner" id="banner">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item d-flex justify-content-center banner1 active">
-                        <div class="bannertexts d-flex flex-column justify-content-center align-items-center">
-                            <h1 class="text-center">Mega Offer</h1>
-                            <div class="bannerinfo">
-                                <h2 class="mb-3 text-center">35%</h2>
-                                <p>Limited Time offers for Smart Watches. Grab it Soon!!!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item banner2">
-                        <div class="bannertexts d-flex flex-column justify-content-center align-items-center h-100">
-                            <h1 class="text-center">Shoe Deals</h1>
-                            <div class="bannerinfo">
-                                <h2 class="mb-3 text-center">47%</h2>
-                                <p>Limited Time offers for Braded Shoes. Grab it Soon!!!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item banner3">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </section>
-
         <section class="categories" id="laptops">
-            <div class="container mt-5">
+            <div class="container mt-5 pt-5">
                 <h1>Categories</h1>
                 <div class="row my-5">
                     <h2 class="mb-3">Laptops</h2>
                     <div class="owl-carousel owl-theme">
-                        <a href="" class="item card" data-aos="fade-up" data-aos-delay="100"
-                        data-aos-duration="1000"  data-aos-once="true">
+                        <a href="" class="item card">
                             <div class="lapimg d-flex justify-content-center">
-                                <img src="./images/laptop1.jpg" class="card-img-top img-fluid" alt=""
-                                    style="width: 250px;">
+                                <img src="./images/laptop1.jpg" class="card-img-top img-fluid" alt="" style="width: 250px;">
                             </div>
                             <div class="card-body">
                                 <h4>ASUS [SmartChoice] Vivobook 16X </h4>
@@ -236,11 +72,9 @@
                                 <small style="text-decoration: line-through;">M.R.P: ₹68,990</small>
                             </div>
                         </a>
-                        <a href="" class="item card" data-aos="fade-up" data-aos-delay="200"
-                        data-aos-duration="1000"  data-aos-once="true">
+                        <a href="" class="item card">
                             <div class="lapimg d-flex justify-content-center">
-                                <img src="./images/laptop2.jpg" class="card-img-top img-fluid" alt=""
-                                    style="width: 250px;">
+                                <img src="./images/laptop2.jpg" class="card-img-top img-fluid" alt="" style="width: 250px;">
                             </div>
                             <div class="card-body">
                                 <h4>HP Laptop 15, 13th Gen Intel Core i3-1315U</h4>
@@ -255,11 +89,9 @@
                                 <small style="text-decoration: line-through;">M.R.P: ₹54,552</small>
                             </div>
                         </a>
-                        <a href="" class="item card" data-aos="fade-up" data-aos-delay="300"
-                        data-aos-duration="1000"  data-aos-once="true">
+                        <a href="" class="item card">
                             <div class="lapimg d-flex justify-content-center">
-                                <img src="./images/laptop3.jpg" class="card-img-top img-fluid" alt=""
-                                    style="width: 250px;">
+                                <img src="./images/laptop3.jpg" class="card-img-top img-fluid" alt="" style="width: 250px;">
                             </div>
                             <div class="card-body">
                                 <h4>Lenovo Ideapad Gaming 3 AMD Ryzen 5 5600H</h4>
@@ -274,11 +106,9 @@
                                 <small style="text-decoration: line-through;">M.R.P: ₹85,000</small>
                             </div>
                         </a>
-                        <a href="" class="item card" data-aos="fade-up" data-aos-delay="400"
-                        data-aos-duration="1000"  data-aos-once="true">
+                        <a href="" class="item card">
                             <div class="lapimg d-flex justify-content-center">
-                                <img src="./images/laptop4.jpg" class="card-img-top img-fluid" alt=""
-                                    style="width: 250px;">
+                                <img src="./images/laptop4.jpg" class="card-img-top img-fluid" alt="" style="width: 250px;">
                             </div>
                             <div class="card-body">
                                 <h4>Xiaomi Notebook Ultra Max 11th Gen</h4>
@@ -293,11 +123,9 @@
                                 <small style="text-decoration: line-through;">M.R.P: ₹76,999</small>
                             </div>
                         </a>
-                        <a href="" class="item card" data-aos="fade-up" data-aos-delay="500"
-                        data-aos-duration="1000"  data-aos-once="true">
+                        <a href="" class="item card">
                             <div class="lapimg d-flex justify-content-center">
-                                <img src="./images/laptop5.jpg" class="card-img-top img-fluid" alt=""
-                                    style="width: 250px;">
+                                <img src="./images/laptop5.jpg" class="card-img-top img-fluid" alt="" style="width: 250px;">
                             </div>
                             <div class="card-body">
                                 <h4>HP Laptop 15s, 12th Gen Intel Core i3-1215U</h4>
@@ -322,8 +150,7 @@
                 <div class="row my-5">
                     <h2 class="mb-3">Mobiles</h2>
                     <div class="owl-carousel owl-theme">
-                        <a href="" class="item card" data-aos="fade-up" data-aos-offset="400" data-aos-delay="100"
-                        data-aos-duration="1000"  data-aos-once="true">
+                        <a href="" class="item card">
                             <div class="mobimg d-flex justify-content-center">
                                 <img src="./images/mob1.jpg" class="card-img-top img-fluid" alt=""
                                     style="width: 250px;">
@@ -341,8 +168,7 @@
                                 <small style="text-decoration: line-through;">M.R.P: ₹56,999</small>
                             </div>
                         </a>
-                        <a href="" class="item card" data-aos="fade-up" data-aos-offset="400" data-aos-delay="200"
-                        data-aos-duration="1000"  data-aos-once="true">
+                        <a href="" class="item card">
                             <div class="mobimg d-flex justify-content-center">
                                 <img src="./images/mob2.jpg" class="card-img-top img-fluid" alt=""
                                     style="width: 250px;">
@@ -360,8 +186,7 @@
                                 <small style="text-decoration: line-through;">M.R.P: ₹54,552</small>
                             </div>
                         </a>
-                        <a href="" class="item card overflow-hidden" data-aos="fade-up" data-aos-offset="400" data-aos-delay="300"
-                        data-aos-duration="1000"  data-aos-once="true">
+                        <a href="" class="item card overflow-hidden">
                             <div class="mobimg d-flex justify-content-center">
                                 <img src="./images/mob3.jpg" class="card-img-top " alt="" style="width: 350px;">
                             </div>
@@ -378,8 +203,7 @@
                                 <small style="text-decoration: line-through;">M.R.P: ₹17,999</small>
                             </div>
                         </a>
-                        <a href="" class="item card" data-aos="fade-up" data-aos-offset="400" data-aos-delay="400"
-                        data-aos-duration="1000" data-aos-once="true">
+                        <a href="" class="item card">
                             <div class="mobimg d-flex justify-content-center">
                                 <img src="./images/mob4.jpg" class="card-img-top img-fluid" alt=""
                                     style="width: 250px;">
@@ -397,8 +221,7 @@
                                 <small style="text-decoration: line-through;">M.R.P: ₹76,999</small>
                             </div>
                         </a>
-                        <a href="" class="item card" data-aos="fade-up" data-aos-offset="400" data-aos-delay="500"
-                        data-aos-duration="1000" data-aos-once="true">
+                        <a href="" class="item card">
                             <div class="mobimg d-flex justify-content-center">
                                 <img src="./images/mob5.jpg" class="card-img-top img-fluid" alt=""
                                     style="width: 250px;">
@@ -793,49 +616,13 @@
                     </div>
                 </div>
         </section>
-
-        <section class="aboutus" id="aboutus">
-            <div class="container my-5 py-5 border-top">
-                <div class="row">
-                    <div class="col-md-6 py-5 d-flex justify-content-center">
-                        <video autoplay muted controls src="./video/Ecommerce Promotions - Motion Graphic Animation.mp4"
-                            class="img-fluid video"></video>
-                    </div>
-                    <div class="col-md-6 py-5">
-                        <h1 class="text-md-start text-sm-center text-center mb-3">About Us</h1>
-                        <p class="text-md-start text-sm-center text-center">Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. In iusto culpa excepturi hic
-                            perspiciatis eligendi magnam facilis, optio rerum consectetur impedit officia accusamus
-                            fugit ipsa eaque nisi corrupti minima sunt, dignissimos laborum! Labore nihil architecto
-                            soluta cum eligendi expedita reprehenderit.</p>
-                        <div class="homebtn d-flex justify-content-md-start justify-content-center">
-                            <a href="" class="btn">Know More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="contact" id="contact">
-            <div class="container my-5 py-5 border-top">
-                <h1>Contact Us</h1>
-                <form class="pt-4 d-flex flex-column justify-content-center align-items-center gap-4">
-                    <input type="text" class="form-control w-75 shadow" placeholder="Your Name">
-                    <input type="text" class="form-control w-75 shadow" placeholder="Your Email">
-                    <input type="text" class="form-control w-75 shadow" placeholder="Your Phone Number">
-                    <textarea class="form-control w-75 shadow" id="message" cols="30" rows="3"
-                        placeholder="Message or Request"></textarea>
-                    <a href="" class="btn">SEND NOW</a>
-                </form>
-            </div>
-        </div>
     </main>
-
+    
     <footer class="footer" id="footer">
         <div class="container border-top">
             <footer class="pt-5">
                 <div class="row">
-                    <div class="col-lg-2 col-md-4 col-sm-12 mb-3">
+                    <div class="col-6 col-md-2 mb-3">
                         <h5>Get to Know</h5>
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Home</a></li>
@@ -846,7 +633,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-lg-2 col-md-4 col-sm-12 mb-3">
+                    <div class="col-6 col-md-2 mb-3">
                         <h5>
                             Make Money</h5>
                         <ul class="nav flex-column">
@@ -858,7 +645,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-lg-2 col-md-4 col-sm-12 mb-3">
+                    <div class="col-6 col-md-2 mb-3">
                         <h5>Let Us Help</h5>
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Your Account</a></li>
@@ -868,7 +655,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-md-5 offset-lg-1 mb-3 d-flex flex-column justify-content-center">
+                    <div class="col-md-5 offset-md-1 mb-3 d-flex flex-column justify-content-center">
                         <form>
                             <h5>Subscribe to our newsletter</h5>
                             <p>Monthly digest of what's new and exciting from us.</p>
@@ -892,26 +679,16 @@
                         <li class="ms-3"><a class="link-body-emphasis" href="#"><i
                                     class="fa-brands fa-instagram"></i></a></li>
                     </ul>
-                    <div class="backtotop">
-                        <a href="#" class="">
-                            <i class="fa-solid fa-angle-up"></i>
-                        </a>
-                    </div>
                 </div>
             </footer>
         </div>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
